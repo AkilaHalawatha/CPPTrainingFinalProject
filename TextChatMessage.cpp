@@ -76,11 +76,11 @@ void TextChatMessage::displayMessage()
  *
  * @return None
  */
-void TextChatMessage::fillTextMessageData(unique_ptr<char[]>& upMsgBytes, int msgDataLn)
+void TextChatMessage::fillTextMessageData(unique_ptr<char[]>& uprMsgBytes, int msgDataLn)
 {
     for(int i=0; i<msgDataLn; i++)
     {
-        upMsgBytes[MSG_DATA_IDX + i] = mTextMessage[i];
+        uprMsgBytes[MSG_DATA_IDX + i] = mTextMessage[i];
     }
 }
 
@@ -91,13 +91,13 @@ void TextChatMessage::fillTextMessageData(unique_ptr<char[]>& upMsgBytes, int ms
  *
  * @return None
  */
-void TextChatMessage::getTextMessageData(unique_ptr<char[]>& upMsgBytes, int msgDataLn)
+void TextChatMessage::getTextMessageData(unique_ptr<char[]>& uprMsgBytes, int msgDataLn)
 {
     mTextMessage = "";
 
     for(int i=0; i<msgDataLn; i++)
     {
-        mTextMessage.push_back(upMsgBytes[MSG_DATA_IDX + i]);
+        mTextMessage.push_back(uprMsgBytes[MSG_DATA_IDX + i]);
     }
 }
 

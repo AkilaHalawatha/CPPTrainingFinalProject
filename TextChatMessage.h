@@ -61,7 +61,7 @@ private:
      *
      * @return None
      */
-    void fillTextMessageData(std::unique_ptr<char[]>& upMsgBytes, int msgDataLn);
+    void fillTextMessageData(std::unique_ptr<char[]>& uprMsgBytes, int msgDataLn);
 
     /**
      * @brief Get message data from a TextChatMessage
@@ -70,7 +70,7 @@ private:
      *
      * @return None
      */
-    void getTextMessageData(std::unique_ptr<char[]>& upMsgBytes, int msgDataLn);
+    void getTextMessageData(std::unique_ptr<char[]>& uprMsgBytes, int msgDataLn);
 };
 
 #endif // TEXT_CHAT_MESSAGE_H
